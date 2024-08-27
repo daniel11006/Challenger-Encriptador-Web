@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Encriptador</title>
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador de texto</title>
 </head>
 <body>
     <header>
-        <img src="/Logo.png" alt="" srcset="">
+        <a href="#" rel="">
+            <img src="./Logo.png" alt="logo alura" class="logo"> 
+        </a>
     </header>
     <main>
-        <section>
-            <textarea name="class=text-area" cols="30" rows="10" placeholder="Ingresa un texto que quiera incriptar" id=""></textarea>
-        </section>
-    </main>    
-        <div>
-        <h6 class="informacion">solo letras minusculas y sin acentos</h6>
-        </div>
-    <div class="botones">
-        <button class="encriptador">Encriptar</button>
-        <button class="desencriptador">Desencriptar</button>
-        <section>
-            <textarea class="mensaje" cols="40" rows="20" id=""></textarea>
-            <div>
-                <button class="copiar">Copiar</button>
-
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder="Ingrese un texto"></textarea>
+            <div class="encriptador-aviso">
+                <img src="./bi_exclamation-circle-fill@2x.png" alt="imagen-aviso" class="img-aviso">
+                <p class="texto-aviso">solo letras minusculas y sin tilde</p>
+            </div>
+            <div class="encriptador-contenedor">
+                <button type="submit" class="btn-encriptar">Encriptar</button>
+                <button type="submit" class="btn-desencriptar">Desencriptar</button>
             </div>
         </section>
+        <section class="tarjeta">
+            <div class="tarjeta-contenedor">
+                <img src="./Muñeco.png" alt="Imagen-muñeco" class="Img-muñeco">
+                <p class="texto-uno">Ningun mensaje fue encontrado</p>
+                <p class="texto-dos">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="btn-copiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="Copyright">&copy; copyright 2024 - Encriptador de texto - desarrollado por Daniel Marino</p>
+    </footer>
 
+    <script src="./encriptador.js"></script>
+</body>
 </html>
